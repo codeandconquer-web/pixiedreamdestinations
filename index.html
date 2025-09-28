@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pixie Dream Destinations | Vacation Planning</title>
+  <meta name="description" content="Stress-free vacation planning tailored to your family. Free consultations and personalized itineraries." />
+  <link rel="canonical" href="https://www.pixiedreamdestinations.com/" />
+  <meta property="og:title" content="Pixie Dream Destinations" />
+  <meta property="og:description" content="Stress-free vacation planning tailored to your family." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.pixiedreamdestinations.com/" />
+  <meta property="og:image" content="https://www.pixiedreamdestinations.com/assets/og-image.jpg" />
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="preload" href="/assets/hero.jpg" as="image">
+  <link rel="stylesheet" href="/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Pixie Dream Destinations",
+    "url": "https://www.pixiedreamdestinations.com",
+    "description": "Custom vacation planning and itinerary design.",
+    "areaServed": "US",
+    "email": "hello@pixiedreamdestinations.com",
+    "telephone": "(XXX) XXX-XXXX",
+    "logo": "https://www.pixiedreamdestinations.com/assets/logo.png",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="/">Pixie Dream Destinations</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact" class="button">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h1>Turn planning stress into vacation magic.</h1>
+          <p>Personalized trips, expert booking, and concierge-level support—without the overwhelm.</p>
+          <a class="button" href="#contact">Start your free consult</a>
+        </div>
+        <img class="hero-img" src="/assets/hero.jpg" alt="Happy family on a beach at sunset">
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container cols">
+        <div>
+          <h2>About {{ADVISOR_NAME}}</h2>
+          <p>{{ABOUT_TEXT}}</p>
+          <ul class="checklist">
+            <li>Custom itineraries for families, couples, and groups</li>
+            <li>Theme parks, cruises, all-inclusives, Europe & beyond</li>
+            <li>No added planning fees for most trips</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Why choose us</h3>
+          <p>We handle the details—so you can focus on the memories.</p>
+          <ul class="bullets">
+            <li>Handpicked resorts and activities</li>
+            <li>Price monitoring & deal alerts</li>
+            <li>24/7 support while you travel</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section alt">
+      <div class="container">
+        <h2>Popular Services</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Disney & Universal</h3>
+            <p>Perfect park days with timed plans and dining.</p>
+          </div>
+          <div class="card">
+            <h3>All-Inclusive Resorts</h3>
+            <p>Sun, sand, and zero stress for families & groups.</p>
+          </div>
+          <div class="card">
+            <h3>Cruises</h3>
+            <p>Ocean or river—ships, cabins, and excursions suited to you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Request a Free Trip Plan</h2>
+        <p>Tell us a little about your trip. We'll reply within one business day.</p>
+        <form id="quote-form" novalidate>
+          <div class="grid-2">
+            <label>Full Name*
+              <input name="full_name" required maxlength="120" autocomplete="name" />
+            </label>
+            <label>Email*
+              <input type="email" name="email" required maxlength="200" autocomplete="email" />
+            </label>
+            <label>Phone
+              <input name="phone" maxlength="25" autocomplete="tel" />
+            </label>
+            <label>Preferred Contact
+              <select name="preferred_contact">
+                <option value="">No preference</option>
+                <option>Email</option>
+                <option>Phone</option>
+                <option>Text</option>
+              </select>
+            </label>
+            <label>Trip Start
+              <input type="date" name="trip_start" />
+            </label>
+            <label>Trip End
+              <input type="date" name="trip_end" />
+            </label>
+            <label>Travelers
+              <input type="number" name="travelers" min="1" max="99" />
+            </label>
+            <label>Budget Range
+              <select name="budget_range">
+                <option value="">Select</option>
+                <option>Under $2,500</option>
+                <option>$2,500–$5,000</option>
+                <option>$5,000–$10,000</option>
+                <option>$10,000+</option>
+              </select>
+            </label>
+          </div>
+          <label>Destinations or Interests
+            <input name="destinations" maxlength="300" placeholder="e.g., Disney World, Jamaica, European river cruise" />
+          </label>
+          <label>Anything else we should know?
+            <textarea name="message" rows="5" maxlength="2000"></textarea>
+          </label>
+          <label class="inline">
+            <input type="checkbox" name="newsletter" value="true" />
+            Keep me posted on deals & tips
+          </label>
+          <!-- Honeypot -->
+          <input type="text" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" class="hp">
+          <button type="submit" class="button">Send my request</button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+        <p class="fineprint">By submitting, you agree to our <a href="/privacy.html">Privacy Policy</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="year"></span> Pixie Dream Destinations. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+  <script src="/js/submit.js" defer></script>
+</body>
+</html>
