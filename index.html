@@ -12,7 +12,8 @@
   <meta property="og:url" content="https://www.pixiedreamdestinations.com/" />
   <meta property="og:image" content="https://www.pixiedreamdestinations.com/assets/og-image.jpg" />
   <meta name="theme-color" content="#4f46e5">
-  <link rel="preload" href="/assets/hero.jpg" as="image">
+  <!-- Preload banner image for faster Largest Contentful Paint -->
+  <link rel="preload" href="/assets/banner.jpg" as="image">
   <link rel="stylesheet" href="/styles.css" />
   <script type="application/ld+json">
   {
@@ -41,18 +42,16 @@
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <div>
-          <h1>Turn planning stress into vacation magic.</h1>
-          <p>Personalized trips, expert booking, and concierge-level support—without the overwhelm.</p>
-          <a class="button" href="#contact">Start your free consult</a>
-        </div>
-        <img class="hero-img" src="/assets/hero.jpg" alt="Happy family on a beach at sunset">
-      </div>
-    </section>
+  <!-- Top banner with background image -->
+  <section class="site-banner" style="--banner-image: url('/assets/banner.jpg')">
+    <div class="container">
+      <h1 class="banner-title">Turn planning stress into vacation magic.</h1>
+      <p class="banner-subtitle">Personalized trips, expert booking, and concierge-level support—without the overwhelm.</p>
+      <a class="button" href="#contact" style="margin-top:1rem;max-width:max-content">Start your free consult</a>
+    </div>
+  </section>
 
+  <main>
     <section id="about" class="section">
       <div class="container cols">
         <div>
@@ -60,7 +59,7 @@
           <p>{{ABOUT_TEXT}}</p>
           <ul class="checklist">
             <li>Custom itineraries for families, couples, and groups</li>
-            <li>Theme parks, cruises, all-inclusives, Europe & beyond</li>
+            <li>Theme parks, cruises, all-inclusives, Europe &amp; beyond</li>
             <li>No added planning fees for most trips</li>
           </ul>
         </div>
@@ -69,7 +68,7 @@
           <p>We handle the details—so you can focus on the memories.</p>
           <ul class="bullets">
             <li>Handpicked resorts and activities</li>
-            <li>Price monitoring & deal alerts</li>
+            <li>Price monitoring &amp; deal alerts</li>
             <li>24/7 support while you travel</li>
           </ul>
         </div>
@@ -81,12 +80,12 @@
         <h2>Popular Services</h2>
         <div class="grid-3">
           <div class="card">
-            <h3>Disney & Universal</h3>
+            <h3>Disney &amp; Universal</h3>
             <p>Perfect park days with timed plans and dining.</p>
           </div>
           <div class="card">
             <h3>All-Inclusive Resorts</h3>
-            <p>Sun, sand, and zero stress for families & groups.</p>
+            <p>Sun, sand, and zero stress for families &amp; groups.</p>
           </div>
           <div class="card">
             <h3>Cruises</h3>
@@ -146,7 +145,7 @@
           </label>
           <label class="inline">
             <input type="checkbox" name="newsletter" value="true" />
-            Keep me posted on deals & tips
+            Keep me posted on deals &amp; tips
           </label>
           <!-- Honeypot -->
           <input type="text" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" class="hp">
@@ -168,3 +167,4 @@
   <script src="/js/submit.js" defer></script>
 </body>
 </html>
+
