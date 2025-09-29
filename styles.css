@@ -184,7 +184,7 @@ a:hover {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  box-shadow: 
+  box-shadow:
     0 8px 16px rgba(177, 156, 217, 0.4),
     0 0 20px rgba(200, 162, 200, 0.3);
   transition: all 0.3s ease;
