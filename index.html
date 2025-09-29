@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pixie Dream Destinations | Vacation Planning</title>
-  <meta name="description" content="Stress-free vacation planning tailored to your family. Free consultations and personalized itineraries." />
+  <meta name="description"
+    content="Stress-free vacation planning tailored to your family. Free consultations and personalized itineraries." />
   <link rel="canonical" href="https://www.pixiedreamdestinations.com/" />
   <meta property="og:title" content="Pixie Dream Destinations" />
   <meta property="og:description" content="Stress-free vacation planning tailored to your family." />
@@ -13,7 +15,7 @@
   <meta property="og:image" content="https://www.pixiedreamdestinations.com/assets/og-image.jpg" />
   <meta name="theme-color" content="#4f46e5">
   <!-- Preload banner image for faster Largest Contentful Paint -->
-  <link rel="preload" href="/assets/banner.jpg" as="image">
+  <link rel="preload" href="/assets/banner.webp" as="image">
   <link rel="stylesheet" href="/styles.css" />
   <script type="application/ld+json">
   {
@@ -30,6 +32,7 @@
   }
   </script>
 </head>
+
 <body>
   <header class="nav">
     <div class="container">
@@ -42,12 +45,18 @@
     </div>
   </header>
 
-  <!-- Top banner with background image -->
-  <section class="site-banner" style="--banner-image: url('/assets/banner.jpg')">
+  <!-- Hero banner with Disney castle background -->
+  <section class="hero-banner">
+    <div class="banner-overlay"></div>
     <div class="container">
-      <h1 class="banner-title">Turn planning stress into vacation magic.</h1>
-      <p class="banner-subtitle">Personalized trips, expert booking, and concierge-level support—without the overwhelm.</p>
-      <a class="button" href="#contact" style="margin-top:1rem;max-width:max-content">Start your free consult</a>
+      <div class="banner-content">
+        <h1 class="site-name">Pixie Dream Destinations</h1>
+        <p class="site-tagline">Your Magical Vacation Planning Specialists</p>
+        <p class="banner-subtitle">Turn planning stress into vacation magic with personalized trips and expert guidance
+        </p>
+        <a class="button primary" href="#contact">Start Your Magical Journey</a>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -55,7 +64,7 @@
     <section id="about" class="section">
       <div class="container cols">
         <div>
-          <h2>About {{ADVISOR_NAME}}</h2>
+          <h2>About {{Heather Hall}}</h2>
           <p>{{ABOUT_TEXT}}</p>
           <ul class="checklist">
             <li>Custom itineraries for families, couples, and groups</li>
@@ -138,7 +147,8 @@
             </label>
           </div>
           <label>Destinations or Interests
-            <input name="destinations" maxlength="300" placeholder="e.g., Disney World, Jamaica, European river cruise" />
+            <input name="destinations" maxlength="300"
+              placeholder="e.g., Disney World, Jamaica, European river cruise" />
           </label>
           <label>Anything else we should know?
             <textarea name="message" rows="5" maxlength="2000"></textarea>
@@ -166,5 +176,5 @@
   <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
   <script src="/js/submit.js" defer></script>
 </body>
-</html>
 
+</html>
