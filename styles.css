@@ -87,10 +87,10 @@ a:hover {
   position: relative;
   min-height: 70vh;
   background:
-    linear-gradient(135deg, rgba(216, 191, 216, 0.3), rgba(255, 182, 193, 0.2)),
+    linear-gradient(135deg, rgba(173, 216, 230, 0.3), rgba(176, 196, 222, 0.2)),
     url('/assets/banner.webp') center/cover no-repeat,
     /* Fallback gradient if image doesn't load */
-    linear-gradient(135deg, #D8BFD8, #FFB6C1);
+    linear-gradient(135deg, #ADD8E6, #B0C4DE);
   /* Replace banner.webp with your Disney castle image */
   display: flex;
   align-items: center;
@@ -105,9 +105,9 @@ a:hover {
   right: 0;
   bottom: 0;
   background: linear-gradient(135deg,
-      rgba(221, 160, 221, 0.2) 0%,
-      rgba(216, 191, 216, 0.15) 50%,
-      rgba(255, 182, 193, 0.2) 100%);
+      rgba(173, 216, 230, 0.2) 0%,
+      rgba(176, 196, 222, 0.15) 50%,
+      rgba(173, 216, 230, 0.2) 100%);
   backdrop-filter: blur(0.5px);
 }
 
@@ -117,44 +117,79 @@ a:hover {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  min-height: 60vh;
 }
 
 .site-name {
   font-family: "Lucida Handwriting", "Brush Script MT", cursive;
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 900;
-  margin: 0 0 1rem 0;
+  margin: 0 0 2rem 0;
   text-shadow:
-    3px 3px 0px rgba(255, 182, 193, 0.8),
-    6px 6px 0px rgba(221, 160, 221, 0.6),
+    3px 3px 0px rgba(173, 216, 230, 0.8),
+    6px 6px 0px rgba(176, 196, 222, 0.6),
     9px 9px 20px rgba(0, 0, 0, 0.4);
   background: linear-gradient(45deg,
       #ffffff 20%,
-      #ffe4b5 40%,
-      #ffc0cb 60%,
-      #dda0dd 80%);
+      #e6f3ff 40%,
+      #cce7ff 60%,
+      #b3daff 80%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   line-height: 1.1;
+  /* Arc effect using CSS transform */
+  transform: perspective(300px) rotateX(-15deg);
+  transform-origin: center bottom;
+  position: relative;
+  width: 100%;
 }
 
 .site-tagline {
+  font-family: "Lucida Calligraphy", "Brush Script MT", cursive;
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   font-weight: 600;
-  color: #ffe4b5;
+  color: #d8bfd8;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1rem 0;
   letter-spacing: 1px;
 }
 
 .banner-subtitle {
+  font-family: "Lucida Calligraphy", "Brush Script MT", cursive;
   font-size: clamp(1rem, 2vw, 1.2rem);
-  color: #ffffff;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-  margin: 0 0 2rem 0;
+  color: #d8bfd8;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  margin: 0;
   line-height: 1.4;
+}
+
+.banner-center {
+  text-align: center;
+  margin: auto 0;
+}
+
+.button.primary {
+  background: linear-gradient(45deg, #b19cd9, #c8a2c8, #dab9da);
+  color: white;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 
+    0 8px 16px rgba(177, 156, 217, 0.4),
+    0 0 20px rgba(200, 162, 200, 0.3);
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  margin-top: auto;
 }
 
 .button.primary {
@@ -176,8 +211,8 @@ a:hover {
 .button.primary:hover {
   transform: translateY(-2px);
   box-shadow:
-    0 12px 24px rgba(218, 112, 214, 0.6),
-    0 0 30px rgba(255, 105, 180, 0.5);
+    0 12px 24px rgba(177, 156, 217, 0.6),
+    0 0 30px rgba(200, 162, 200, 0.5);
   text-decoration: none;
 }
 
