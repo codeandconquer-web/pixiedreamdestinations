@@ -228,9 +228,14 @@ a:hover {
 
   .site-name {
     text-shadow:
-      2px 2px 0px rgba(255, 20, 147, 0.8),
-      4px 4px 0px rgba(138, 43, 226, 0.6),
-      6px 6px 15px rgba(0, 0, 0, 0.8);
+      2px 2px 0px rgba(173, 216, 230, 0.8),
+      4px 4px 0px rgba(176, 196, 222, 0.6),
+      6px 6px 15px rgba(0, 0, 0, 0.4);
+    transform: perspective(200px) rotateX(-10deg);
+  }
+
+  .banner-center {
+    margin: 1rem 0;
   }
 }
 
@@ -343,5 +348,38 @@ textarea:focus {
   .grid-2,
   .grid-3 {
     grid-template-columns: 1fr
+  }
+}
+
+/* Large desktop screens */
+@media (min-width: 1400px) {
+  .hero-banner {
+    min-height: 80vh;
+  }
+
+  .site-name {
+    font-size: 5rem;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/* Medium desktop screens */
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .hero-banner {
+    min-height: 75vh;
+  }
+}
+
+/* Tablet landscape */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .hero-banner {
+    min-height: 65vh;
+  }
+
+  .site-name {
+    transform: perspective(250px) rotateX(-12deg);
   }
 }
