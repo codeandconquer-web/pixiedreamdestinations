@@ -87,10 +87,10 @@ a:hover {
   position: relative;
   min-height: 70vh;
   background:
-    linear-gradient(135deg, rgba(75, 0, 130, 0.8), rgba(255, 20, 147, 0.6)),
+    linear-gradient(135deg, rgba(216, 191, 216, 0.3), rgba(255, 182, 193, 0.2)),
     url('/assets/banner.webp') center/cover no-repeat,
     /* Fallback gradient if image doesn't load */
-    linear-gradient(135deg, #4B0082, #FF1493);
+    linear-gradient(135deg, #D8BFD8, #FFB6C1);
   /* Replace banner.webp with your Disney castle image */
   display: flex;
   align-items: center;
@@ -105,10 +105,10 @@ a:hover {
   right: 0;
   bottom: 0;
   background: linear-gradient(135deg,
-      rgba(138, 43, 226, 0.4) 0%,
-      rgba(75, 0, 130, 0.3) 50%,
-      rgba(255, 20, 147, 0.3) 100%);
-  backdrop-filter: blur(1px);
+      rgba(221, 160, 221, 0.2) 0%,
+      rgba(216, 191, 216, 0.15) 50%,
+      rgba(255, 182, 193, 0.2) 100%);
+  backdrop-filter: blur(0.5px);
 }
 
 .banner-content {
@@ -124,19 +124,17 @@ a:hover {
   font-weight: 900;
   margin: 0 0 1rem 0;
   text-shadow:
-    3px 3px 0px rgba(255, 20, 147, 0.8),
-    6px 6px 0px rgba(138, 43, 226, 0.6),
-    9px 9px 20px rgba(0, 0, 0, 0.8);
+    3px 3px 0px rgba(255, 182, 193, 0.8),
+    6px 6px 0px rgba(221, 160, 221, 0.6),
+    9px 9px 20px rgba(0, 0, 0, 0.4);
   background: linear-gradient(45deg,
       #ffffff 20%,
-      #ffd700 40%,
-      #ff69b4 60%,
-      #da70d6 80%);
+      #ffe4b5 40%,
+      #ffc0cb 60%,
+      #dda0dd 80%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-size: 200% 200%;
-  animation: shimmer 3s ease-in-out infinite;
   letter-spacing: 2px;
   line-height: 1.1;
 }
@@ -144,8 +142,8 @@ a:hover {
 .site-tagline {
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   font-weight: 600;
-  color: #ffd700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  color: #ffe4b5;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin: 0 0 1.5rem 0;
   letter-spacing: 1px;
 }
@@ -180,18 +178,6 @@ a:hover {
     0 12px 24px rgba(218, 112, 214, 0.6),
     0 0 30px rgba(255, 105, 180, 0.5);
   text-decoration: none;
-}
-
-@keyframes shimmer {
-
-  0%,
-  100% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
 }
 
 /* Responsive adjustments for banner */
