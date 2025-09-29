@@ -87,8 +87,10 @@ a:hover {
   position: relative;
   min-height: 70vh;
   background:
-    linear-gradient(135deg, rgba(75, 0, 130, 0.3), rgba(255, 20, 147, 0.2)),
-    url('/assets/banner.webp') center/cover no-repeat;
+    linear-gradient(135deg, rgba(75, 0, 130, 0.8), rgba(255, 20, 147, 0.6)),
+    url('/assets/banner.webp') center/cover no-repeat,
+    /* Fallback gradient if image doesn't load */
+    linear-gradient(135deg, #4B0082, #FF1493);
   /* Replace banner.webp with your Disney castle image */
   display: flex;
   align-items: center;
