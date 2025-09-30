@@ -148,9 +148,9 @@ a:hover {
     6px 6px 0px rgba(147, 112, 219, 0.6),
     9px 9px 20px rgba(0, 0, 0, 0.4);
   background: linear-gradient(45deg,
-      #dda0dd 20%,
-      #da70d6 40%,
-      #ba55d3 60%,
+      hsl(0, 0%, 100%) 20%,
+      #e4dee4 40%,
+      #c8bbcb 60%,
       #9370db 80%);
   background-clip: text;
   -webkit-background-clip: text;
