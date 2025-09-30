@@ -129,14 +129,16 @@ a:hover {
   font-family: "Lucida Handwriting", "Brush Script MT", cursive;
   font-size: clamp(1.8rem, 4.5vw, 3rem);
   font-weight: 900;
-  margin: 0;
+  margin: 0 auto;
   position: relative;
-  width: 100%;
+  width: 90%;
+  max-width: 800px;
   height: 120px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
+  padding: 0 2rem;
 }
 
 .site-name span {
@@ -155,6 +157,9 @@ a:hover {
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
   position: relative;
+  margin: 0 1rem;
+  flex: 1;
+  text-align: center;
 }
 
 .site-name .word-1 {
@@ -250,6 +255,12 @@ a:hover {
   .site-name {
     height: 100px;
     font-size: clamp(1.4rem, 4vw, 2.2rem);
+    width: 95%;
+    padding: 0 1rem;
+  }
+  
+  .site-name span {
+    margin: 0 0.5rem;
   }
   
   .site-name .word-1 {
@@ -410,6 +421,12 @@ textarea:focus {
   .site-name {
     height: 110px;
     font-size: clamp(1.6rem, 4.2vw, 2.8rem);
+    width: 92%;
+    padding: 0 1.5rem;
+  }
+  
+  .site-name span {
+    margin: 0 0.75rem;
   }
 
   .site-name .word-1 {
